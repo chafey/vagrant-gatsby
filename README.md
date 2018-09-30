@@ -14,6 +14,8 @@ Terminal Two:
 
 > cd src/testApp
 
+> npm install
+
 > gatsby develop -H 0.0.0.0
 
 Open the gatsby app in your web browser running on the host:
