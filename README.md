@@ -5,13 +5,19 @@ NOTE: you need to keep vagrant rsync-auto running to make sure source changes on
 
 Terminal One:
 > vagrant up
+
 > vagrant rsync-auto
 
 Terminal Two:
+
 > vagrant ssh
+
 > gatsby new testApp
+
 > cd testApp
+
 > gatsby develop -H 0.0.0.0
 
 Open the gatsby app in your web browser running on the host:
+
 > open http://localhost:8000/
