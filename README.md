@@ -1,14 +1,9 @@
 # vagrant-gatsby
-Vagrantfile for a [gatsby](https://www.gatsbyjs.org/)  with support for vmware vagrant plugin
-
-NOTE: you need to keep vagrant rsync-auto running to make sure source changes on host are copied to the guest:
+Vagrantfile for  [gatsbyjs](https://www.gatsbyjs.org/) 
 
 Terminal One:
+
 > vagrant up
-
-> vagrant rsync-auto
-
-Terminal Two:
 
 > vagrant ssh
 
@@ -21,4 +16,12 @@ Terminal Two:
 Open the gatsby app in your web browser running on the host:
 
 > open http://localhost:8000/
+
+
+NOTE: you can run vagrant rsync-auto in another terminal to synchronize source changes in the guest to the host.  This
+can be useful when you want to use an editor on your host (e.g. Visual Studio Code)
+
+Terminal Two:
+
+> vagrant rsync-auto
 
